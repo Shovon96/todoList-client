@@ -4,7 +4,6 @@ const Home = () => {
 
 
     {/* ToDo:
-            backend setup kora
             Login in text black
             toDoTask page er color and UI change
             toDoTask page er drugAndDrop error solve

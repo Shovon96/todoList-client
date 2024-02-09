@@ -10,6 +10,7 @@ import AuthProvider from './Provider/AuthProvider';
 import { Toaster } from 'react-hot-toast';
 import Login from './Pages/Login';
 import Registetion from './Pages/Registetion';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/todoList',
-        element: <TodoList />
+        element: <PrivateRoute><TodoList /></PrivateRoute>
       },
       {
         path: '/login',
