@@ -38,10 +38,10 @@ const Login = () => {
     };
 
     return (
-        <div className="h-[90vh] flex items-center justify-center">
-            <div className="bg-white shadow-lg shadow-gray-400 px-8 py-4 rounded-lg w-full sm:w-96">
-                <h1 className="text-4xl font-bold text-blue-600 text-center py-6">SignIn</h1>
-                {/* <img className="pb-4" src="https://media.discordapp.net/attachments/1177886803424976896/1187365090618511442/image.png?ex=65969ee9&is=658429e9&hm=0649a2e95842831b7cbf00aca54af762040bb187d7de9b306a668a5115a40f6c&=&format=webp&quality=lossless" alt="" /> */}
+        <div className="h-[90vh] flex items-center justify-center"  style={{backgroundImage: 'url(https://t3.ftcdn.net/jpg/04/17/77/78/360_F_417777825_v7o8RvkQhxpZkE0ZBD4xwzri5hGFHkO3.jpg)'}}>
+            <div className="border shadow-lg shadow-gray-400 px-8 py-4 rounded-lg w-full sm:w-96 text-white">
+                {/* <h1 className="text-4xl font-bold text-blue-600 text-center py-6">SignIn</h1> */}
+                <img className="pb-4" src="https://media.discordapp.net/attachments/1177886803424976896/1187365090618511442/image.png?ex=65969ee9&is=658429e9&hm=0649a2e95842831b7cbf00aca54af762040bb187d7de9b306a668a5115a40f6c&=&format=webp&quality=lossless" alt="" />
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="mb-4">
                         <label htmlFor="" className="text-base font-semibold mb-1 pl-1">Email:</label>
@@ -78,7 +78,7 @@ const Login = () => {
                     <hr />
                     <button
                         onClick={handleGoogleSignIn}
-                        className="w-full text-lg font-bold mt-4 rounded-full flex gap-2 items-center justify-center border py-1 hover:bg-gray-100"
+                        className="w-full text-lg font-bold mt-4 rounded-full flex gap-2 items-center justify-center border py-1 hover:bg-gray-300 hover:text-black"
                     >
                         <FcGoogle className="text-xl" /> GOOGLE
                     </button>
