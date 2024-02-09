@@ -20,6 +20,14 @@ const Navbar = () => {
                 >
                     Todo List
                 </NavLink>
+                <NavLink
+                    to="/login"
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "font-bold text-blue-600 underline" : ""
+                    }
+                >
+                    Login
+                </NavLink>
             </ul>
         </div>
     );
