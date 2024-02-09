@@ -7,11 +7,11 @@ import { FaListCheck } from "react-icons/fa6";
 const Navbar = () => {
     return (
         <div>
-            <ul className="flex gap-8 py-5 justify-center bg-blue-300 text-white font-semibold">
+            <ul className="flex gap-8 py-5 justify-center bg-sky-500 text-white font-semibold">
                 <NavLink
                     to="/"
                     className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "font-bold text-blue-600 underline" : ""
+                        isPending ? "pending" : isActive ? "font-bold text-blue-700 underline" : ""
                     }
                 >
                    <span className="flex items-center font-bold gap-1"><FaHome /> Home</span>
@@ -19,7 +19,7 @@ const Navbar = () => {
                 <NavLink
                     to="/todoList"
                     className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "font-bold text-blue-600 underline" : ""
+                        isPending ? "pending" : isActive ? "font-bold text-blue-700 underline" : ""
                     }
                 >
                    <span className="flex items-center font-bold gap-1"><FaListCheck /> Todo List</span>
@@ -27,7 +27,7 @@ const Navbar = () => {
                 <NavLink
                     to="/login"
                     className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "font-bold text-blue-600 underline" : ""
+                        isPending ? "pending" : isActive ? "font-bold text-blue-700 underline" : ""
                     }
                 >
                     <span className="flex items-center font-bold gap-1">Login <LuLogIn /></span>

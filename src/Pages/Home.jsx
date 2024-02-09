@@ -1,3 +1,4 @@
+import Banner from "../component/Banner";
 
 const Home = () => {
 
@@ -18,7 +19,7 @@ const Home = () => {
 
     return (
         <div>
-            This is home outlet
+            <Banner />
         </div>
     );
 };
