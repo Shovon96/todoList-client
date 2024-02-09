@@ -1,4 +1,8 @@
 import { NavLink } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
+import { LuLogIn } from "react-icons/lu";
+import { FaListCheck } from "react-icons/fa6";
+
 
 const Navbar = () => {
     return (
@@ -10,7 +14,7 @@ const Navbar = () => {
                         isPending ? "pending" : isActive ? "font-bold text-blue-600 underline" : ""
                     }
                 >
-                    Home
+                   <span className="flex items-center font-bold gap-1"><FaHome /> Home</span>
                 </NavLink>
                 <NavLink
                     to="/todoList"
@@ -18,7 +22,7 @@ const Navbar = () => {
                         isPending ? "pending" : isActive ? "font-bold text-blue-600 underline" : ""
                     }
                 >
-                    Todo List
+                   <span className="flex items-center font-bold gap-1"><FaListCheck /> Todo List</span>
                 </NavLink>
                 <NavLink
                     to="/login"
@@ -26,7 +30,7 @@ const Navbar = () => {
                         isPending ? "pending" : isActive ? "font-bold text-blue-600 underline" : ""
                     }
                 >
-                    Login
+                    <span className="flex items-center font-bold gap-1">Login <LuLogIn /></span>
                 </NavLink>
             </ul>
         </div>

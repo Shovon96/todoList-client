@@ -5,8 +5,7 @@ const Footer = () => {
     return (
         <>
             <div className="bg-blue-300">
-                <div className="flex justify-evenly mt-5 items-center">
-                    <img className="h-14 marker:md:h-20 w-auto" src="https://media.discordapp.net/attachments/1177886803424976896/1187250535628288070/logo.png?ex=65963439&is=6583bf39&hm=8b8deb55d58d4524e9a61c4225be0c0b9175c881ffdcf746d0793633b89a79a0&=&format=webp&quality=lossless" alt="" />
+                <div className="flex justify-evenly flex-row-reverse items-center">
                     <div className="flex gap-6 text-2xl text-blue-600">
                         <a
                             className="font-bold pl-2"
@@ -30,16 +29,16 @@ const Footer = () => {
                             <IoMail />
                         </a>
                     </div>
+                    <h1 className="flex justify-center items-center py-6">© 2024, All Rights Reserved. Designed & Created By{" "}
+                        <a
+                            className="font-bold text-lg pl-2"
+                            href="https://fakruddin_portfolio.surge.sh/"
+                            target="_blank"
+                        >
+                            Fakhruddin Ahmed.
+                        </a>{" "}
+                    </h1>
                 </div>
-                <h1 className="flex justify-center items-center py-6">© 2024, All Rights Reserved. Designed & Created By{" "}
-                    <a
-                        className="font-bold text-lg pl-2"
-                        href="https://fakruddin_portfolio.surge.sh/"
-                        target="_blank"
-                    >
-                        Fakhruddin Ahmed.
-                    </a>{" "}
-                </h1>
             </div>
         </>
     );
