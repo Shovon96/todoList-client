@@ -4,9 +4,9 @@ import { IoMail } from "react-icons/io5";
 const Footer = () => {
     return (
         <>
-            <div className="bg-blue-300">
+            <div className="bg-sky-500">
                 <div className="flex justify-evenly flex-row-reverse items-center">
-                    <div className="flex gap-6 text-2xl text-blue-600">
+                    <div className="flex gap-6 text-2xl text-white">
                         <a
                             className="font-bold pl-2"
                             href="https://github.com/Shovon96"

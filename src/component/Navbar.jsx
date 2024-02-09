@@ -18,7 +18,7 @@ const Navbar = () => {
     };
     return (
         <div>
-            <ul className="flex gap-8 py-5 justify-center bg-sky-500 text-white font-semibold">
+            <ul className="flex gap-8 py-5 justify-center items-center bg-sky-500 text-white font-semibold">
                 <NavLink
                     to="/"
                     className={({ isActive, isPending }) =>
@@ -35,7 +35,7 @@ const Navbar = () => {
                 >
                     <span className="flex items-center font-bold gap-1"><FaListCheck /> Todo List</span>
                 </NavLink>
-
+                
                 {user ? (
                     <NavLink
                         onClick={handleLogout}
@@ -43,7 +43,7 @@ const Navbar = () => {
                             isPending ? "pending" : isActive ? "" : ""
                         }
                     >
-                        <span className="flex items-center font-bold gap-1">Logout <LuLogIn /></span>
+                        <span className="flex items-center font-bold gap-1">Logout <img className="h-8 w-8 rounded-full" src={user.photoURL ? user?.photoURL : 'https://e7.pngegg.com/pngimages/419/473/png-clipart-computer-icons-user-profile-login-user-heroes-sphere-thumbnail.png' } alt="" /></span>
                     </NavLink>
                 ) : (
                     <NavLink

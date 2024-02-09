@@ -1,4 +1,5 @@
 import Banner from "../component/Banner";
+import Personalities from "../component/Personalities";
 
 const Home = () => {
 
@@ -19,6 +20,7 @@ const Home = () => {
     return (
         <div>
             <Banner />
+            <Personalities />
         </div>
     );
 };
