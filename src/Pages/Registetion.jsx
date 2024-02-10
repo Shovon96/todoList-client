@@ -17,20 +17,6 @@ const Registetion = () => {
             .then(() => {
                 toast.success('Successfully Login!!')
                 navigate('/')
-                // updateUserProfile(data.name, data.photo)
-                //     .then(() => {
-                //         const userInfo = {
-                //             name: data.name,
-                //             email: data.email
-                //         }
-                //         axiosPublic.post('/users', userInfo)
-                //             .then(res => {
-                //                 if (res.data.insertedId) {
-                //                     toast.success('Successfully Login!!')
-                //                     navigate('/home')
-                //                 }
-                //             })
-                //     })
             })
             .catch(err => {
                 toast.error(err.message)
@@ -42,7 +28,6 @@ const Registetion = () => {
         googleSignIn()
             .then(() => {
                 toast.success("Login Successfully");
-                // toast.success('Successfully toasted!')
                 navigate(from, { replace: true })
             })
     }

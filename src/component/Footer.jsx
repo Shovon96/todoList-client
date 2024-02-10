@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <>
             <div className="bg-sky-500">
-                <div className="flex justify-evenly flex-row-reverse items-center">
-                    <div className="flex gap-6 text-2xl text-white">
+                <div className="md:flex justify-evenly flex-row-reverse items-center">
+                    <div className="flex justify-center md:justify-normal pt-5 md:pt-0 gap-6 text-2xl text-white">
                         <a
                             className="font-bold pl-2"
                             href="https://github.com/Shovon96"
@@ -29,7 +29,7 @@ const Footer = () => {
                             <IoMail />
                         </a>
                     </div>
-                    <h1 className="flex justify-center items-center py-6">© 2024, All Rights Reserved. Designed & Created By{" "}
+                    <h1 className="md:flex text-center justify-center items-center py-6">© 2024, All Rights Reserved. Designed & Created By{" "}
                         <a
                             className="font-bold text-lg pl-2"
                             href="https://fakruddin_portfolio.surge.sh/"

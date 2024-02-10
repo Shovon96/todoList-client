@@ -46,7 +46,7 @@ const Login = () => {
                     <div className="mb-4">
                         <label htmlFor="" className="text-base font-semibold mb-1 pl-1">Email:</label>
                         <input
-                            className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
+                            className="w-full border border-gray-300 rounded-md px-4 py-2 text-black focus:outline-none focus:border-blue-500"
                             placeholder="Type Your Email..."
                             type="email"
                             id="email"
@@ -59,7 +59,7 @@ const Login = () => {
                     <div className="mb-4">
                         <label htmlFor="" className="text-base font-semibold mb-1 pl-1">Password</label>
                         <input
-                            className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
+                            className="w-full border border-gray-300 rounded-md px-4 py-2 text-black focus:outline-none focus:border-blue-500"
                             placeholder="Type Your Password..."
                             type="password"
                             id="password"
