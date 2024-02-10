@@ -1,8 +1,11 @@
-# React + Vite
+## Live Link: taskipy-todoList.surge.sh
+### packages
+- tanstack-query for fatching api
+- firebase for authentication
+- react-beautiful-dnd for drug and drop
+- react-hook-form for form submition
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features:
+- only the logged in user can add task and progress his/her todo work.
+- If user can update task and delete also.
+- User can select to progrss his/her todo progress or drug and drop 
