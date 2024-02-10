@@ -67,15 +67,12 @@ const TodoList = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full mx-auto text-white pb-5">
-      {/* <Helmet>
-        <title>Dashboard | Taskify</title>
-      </Helmet> */}
       <div className="flex justify-center py-5 text-xl">
         <button
-          className="px-3 py-2 bg-blue-400 rounded-md hover:bg-blue-100 hover:text-blue-500"
+          className="px-3 py-2 bg-blue-600 rounded-md font-bold hover:bg-blue-700"
           onClick={() => openModal()}
         >
-          Create a Task
+          Create A Task
         </button>
       </div>
       <DragDropContext onDragEnd={onDragEnd}>

@@ -42,12 +42,12 @@ const Card = ({ item, refetch, provided }) => {
             {...provided.dragHandleProps}
             className="mb-1  rounded-sm p-3 outline-2 outline-blue-500"
         >
-            <h3 className="text-bold">{item.title}</h3>
+            <h3 className="font-bold text-lg">{item.title}</h3>
             <p className="text-sm">{item.description}</p>
             <div className="flex justify-between pt-2">
                 <span
                     className={`px-1 rounded-md text-white ${item.priority === "low" && "bg-green-500"
-                        } ${item.priority === "moderate" && "bg-blue-500"} ${item.priority === "high" && "bg-red-500"
+                        } ${item.priority === "moderate" && "bg-blue-600"} ${item.priority === "high" && "bg-red-500"
                         }`}
                 >
                     {item.priority}
@@ -57,7 +57,7 @@ const Card = ({ item, refetch, provided }) => {
                     {item.deadline}
                 </span>
             </div>
-            <div className="flex justify-between pt-1 ">
+            <div className="flex justify-between pt-2">
                 <button
                     onClick={() => openModal()}
                     className="text-xl"
@@ -67,7 +67,7 @@ const Card = ({ item, refetch, provided }) => {
                 </button>
                 <select
                     onChange={handleStatus}
-                    className="rounded-lg outline-blue-500"
+                    className="rounded-lg outline-blue-600"
                     name="status"
                     id=""
                     defaultValue={item.status}
@@ -78,10 +78,11 @@ const Card = ({ item, refetch, provided }) => {
                     <option value="completed">Completed</option>
                 </select>
 
-                <button onClick={handleDelete} className="text-xl" title="Delete Task">
+                <button onClick={handleDelete} className="text-2xl" title="Delete Task">
                     <MdDelete />
                 </button>
             </div>
+            <hr />
             <EditModal
                 refetch={refetch}
                 item={item}
